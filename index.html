@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webinterface</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-8"><h1>Gen form</h1></div>
+                <form  class="form-horizontal" role="form" action="http://webvanced.nl"  method="POST">
+
+
+                <div class="form-group">
+                    <label for="file-path" class="col-sm-3 control-label">File:</label>
+                     <div class="col-sm-8">           
+                        <input id="file-path" name="file-path" type="file">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="output-name">Output name:</label>
+                    <div class="col-sm-8"><input type="text" class="form-control" name="output_name" id="output-name"></div>
+                </div>    
+
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="fasta-optie">Select type:</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" id="fasta-optie" name="fasta_optie">
+                          <option value="abi">abi</option>
+                          <option value="fasta">fasta</option>
+                          <option value="sff">sff</option>
+                        </select>
+                    </div>
+                </div>   
+
+
+                <div class="form-group type-selection">
+                    <label class="col-sm-3 control-label" for="output-type">Type:</label>
+                    <div class="col-sm-8">            
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="output_type" id="optionsRadios1" value="eiwit" checked>
+                            Eiwit
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="output_type" id="optionsRadios2" value="dna-sequentie">
+                            Dna sequentie
+                          </label>
+                        </div>
+                    </div>
+                </div>           
+
+
+                 <div class="form-group">
+                    <label class="col-sm-3 control-label" for="gb-files">Create gb files:</label>
+                    <div class="col-sm-8"><input id="gb-files" value="gb-files" name="gb-files" type="checkbox"></div>
+                 </div>
+
+
+                 <div class="form-group">
+                    <label class="col-sm-3 control-label" for="manufacturability-analasisis">Manufacturability analasisis:</label>
+                    <div class="col-sm-8"><input id="manufacturability-analasisis" name="manufacturability-analasisis" value="manufacturability-analasisis" type="checkbox"></div>
+                 </div>
+
+
+                 <div class="form-group">
+                    <label class="col-sm-3 control-label" for="odon-optimized">Odon optimized:</label>
+                    <div class="col-sm-8"><input id="odon-optimized" name="manufacturability-analasisis" value="odon-optimized" type="checkbox"></div>
+                 </div>        
+
+
+                 <div class="form-group">
+                    <div class="col-sm-3">&nbsp;</div>
+                    <div class="col-sm-8"><button type="submit" class="btn btn-default">Submit</button></div>
+                 </div>    
+
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
